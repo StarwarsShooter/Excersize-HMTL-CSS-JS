@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Dieren";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Alle dieren die wij hebben</p>
+<h3>Honden</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Naam</th>
+        <th>Leeftijd</th>
+        <th>Reg. Nr.</th>
+        <th>Gereserveerd</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Henry</th>
+        <td>2 yaar</td>
+        <td>352</td>
+        <td>Nee</td>
+    </tr>
+    <tr>
+        <th>Frank</th>
+        <td>8 maanden</td>
+        <td>776</td>
+        <td>Ja</td>
+    </tr>
+    </tbody>
+</table>
+<h3>Katten</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Naam</th>
+        <th>Leeftijd</th>
+        <th>Reg. Nr.</th>
+        <th>Gereserveerd</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>Croockshanks</th>
+        <td>1 maand</td>
+        <td>1123</td>
+        <td>Nee</td>
+    </tr>
+    <tr>
+        <th>Lana</th>
+        <td>5 jaar</td>
+        <td>2331</td>
+        <td>Nee</td>
+    </tr>
+    </tbody>
+</table>
+<form>
+    <input type="radio" id="hond" name="animal" value="hond">
+    <label for="hond">Hond</label><br>
+    <input type="radio" id="kat" name="animal" value="kat">
+    <label for="kat">Kat</label><br>
+    <label for="naam">Naam</label>
+    <input type="text" id="naam"/>
+    <br/>
+    <label for="naam">Leeftijd</label>
+    <input type="text" id="leeftijd"/>
+    <br/>
+    <label for="naam">Reg. Nr.</label>
+    <input type="text" id="RegNr"/>
+    <br/>
+    <label for="naam">Gereserveerd</label>
+    <input type="text" id="gereserveerd"/>
+    <br/>
+    <input class="knop" type="submit" value="Toevoegen"/>
+</form>
