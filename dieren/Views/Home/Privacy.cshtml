@@ -1,10 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Dieren";
+    ViewData["Title"] = "Onze Dieren";
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Alle dieren die wij hebben</p>
+<p>Informatie over <a href="https://nl.wikipedia.org/wiki/Hond">honden</a> en informatie over <a href="https://nl.wikipedia.org/wiki/Kat_(dier)">katten</a></p>
+<br/><br/>
 <h3>Honden</h3>
+<p>Honden zijn aardige en vrij speelse dieren, het kan wel even duren totdat ze gewend zijn aan hun nieuwe huis</p><br/>
 <table>
     <thead>
     <tr>
@@ -29,7 +32,9 @@
     </tr>
     </tbody>
 </table>
+<br/><br/>
 <h3>Katten</h3>
+<p>Katten zijn ook aardige dieren, minder speels dan honden en kijk uit met dozen omdat ze daarin gaan zitten en duwen dingen van de tafel</p><br/>
 <table>
     <thead>
     <tr>
@@ -54,22 +59,31 @@
     </tr>
     </tbody>
 </table>
+
 <form>
     <input type="radio" id="hond" name="animal" value="hond">
     <label for="hond">Hond</label><br>
     <input type="radio" id="kat" name="animal" value="kat">
     <label for="kat">Kat</label><br>
-    <label for="naam">Naam</label>
-    <input type="text" id="naam"/>
+    <label for="name">Naam</label>
+    <input type="text" id="name" onfocus="focusFunction()" onblur="blurFunction()"><p id="fit" class="hidden">Verplicht!</p>
     <br/>
-    <label for="naam">Leeftijd</label>
+    <label for="name">Leeftijd</label>
     <input type="text" id="leeftijd"/>
     <br/>
-    <label for="naam">Reg. Nr.</label>
+    <label for="name">Reg. Nr.</label>
     <input type="text" id="RegNr"/>
     <br/>
-    <label for="naam">Gereserveerd</label>
+    <label for="name">Gereserveerd</label>
     <input type="text" id="gereserveerd"/>
     <br/>
     <input class="knop" type="submit" value="Toevoegen"/>
 </form>
+@*<script type="text/javascript">
+    function focusFunction() {
+        $("#fit").removeClass("hidden");
+    }
+    function blurFunction() {
+        $("#fit").addClass("hidden");
+    }
+</script>*@

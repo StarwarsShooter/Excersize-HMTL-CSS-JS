@@ -106,3 +106,9 @@ label {
 .knop:hover {
     cursor: pointer;
 }
+.hidden {
+    display: none;
+}
+p {
+    display: inline;
+}
